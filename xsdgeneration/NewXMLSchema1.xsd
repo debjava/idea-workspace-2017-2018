@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="emp">
+    <xs:sequence>
+      <xs:element name="adrs" type="address" minOccurs="0"/>
+      <xs:element name="age" type="xs:int"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="address">
+    <xs:sequence>
+      <xs:element name="city" type="xs:string" minOccurs="0"/>
+      <xs:element name="doorNo" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
